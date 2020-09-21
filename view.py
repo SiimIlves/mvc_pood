@@ -9,4 +9,4 @@ class View:
                   str(item.getPrice())+"\t\t|\t"+
                   str(item.getAmount()))
             print("---------------------------")
-        print("============================")p
+        print("============================")

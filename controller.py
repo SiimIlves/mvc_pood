@@ -9,7 +9,7 @@ class Controller:
             self.model.addItem(name, price, amount)
             print("OK")
         except:
-            print("NO")
+            print("No")
 
     def showItems(self):
         items = self.model.showItems()

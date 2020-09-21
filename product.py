@@ -16,7 +16,7 @@ class Product:
         self.__price = price
     def setAmount(self, amount):
         self.__amount = amount
-    # getters
+    # getter
     def getName(self):
         return self.__name
     def getPrice(self):

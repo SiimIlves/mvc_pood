@@ -1,4 +1,4 @@
-# shop.py
+# shop.piu
 class Shop:
     def __init__(self):
         self.products = []
