@@ -7,6 +7,10 @@ class Controller:
     def addItem(self, name, price, amount):
         try:
             self.model.addItem(name, price, amount)
-            print("Ok!")
+            print("OK")
         except:
-            print("Problem!")
+            print("NO")
+
+    def showItems(self):
+        items = self.model.showItems()
+        self.view.showItems(items)

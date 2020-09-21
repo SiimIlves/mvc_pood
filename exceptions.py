@@ -1,5 +1,5 @@
 class ItemExists(Exception):
     pass
 
-class ItemDoesNotExist(Exception)
+class ItemDoesntExist(Exception):
     pass

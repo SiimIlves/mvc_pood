@@ -1,13 +1,13 @@
 # product.py
 class Product:
-    # construct
+    # contruct
     def __init__(self, name, price, amount):
         self.setName(name)
         self.setPrice(price)
         self.setAmount(amount)
     # product test view
     def __repr__(self):
-        return "name: {} \nprice: {} \namount:{}".format(self.getName(), self.getPrice(), self.getAmount())
+        return "name: {} \nprice: {} \namount: {}".format(self.getName(), self.getPrice(), self.getAmount())
 
     # setters
     def setName(self, name):
