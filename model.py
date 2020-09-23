@@ -10,3 +10,9 @@ class Model:
     # show item
     def showItems(self):
         return helpers.showItems()
+    def remItem(self):
+        helpers.remItem()
+    def updItem(self):
+        helpers.updItem()
+    def remAll(self):
+        helpers.remAll()

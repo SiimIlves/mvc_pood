@@ -3,6 +3,7 @@ class View:
     def showItems(self, items):
         print("Shop items")
         print("============================")
+        print("---------------------------")
         print("name\t|\tprice\t|\tamount")
         for item in items:
             print(item.getName()+"\t|\t"+

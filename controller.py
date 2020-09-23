@@ -14,3 +14,12 @@ class Controller:
     def showItems(self):
         items = self.model.showItems()
         self.view.showItems(items)
+
+    def remItem(self):
+        items = self.model.remItem()
+
+    def updItem(self):
+        items = self.model.updItem()
+
+    def remAll(self):
+        items = self.model.remAll()
