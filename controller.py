@@ -23,3 +23,10 @@ class Controller:
 
     def remAll(self):
         items = self.model.remAll()
+
+    def showItem(self, name):
+        try:
+            item = self.model.showItem(name)
+            self.view.showItem(item)
+        except:
+            self.view.noItemError(name)
