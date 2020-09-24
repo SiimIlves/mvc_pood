@@ -107,3 +107,15 @@ def updItem():
 def remAll():
     global items
     items.clear()
+    
+# show item
+def showItem(name):
+    global items
+    # control all items step by step
+    for item in items:
+        # if the name is the same as we search
+        if(item.getName() == name):
+            return item
+        else:
+            continue
+            raise exceptions.ItemExists("Couldn't find {}!".format(name))
