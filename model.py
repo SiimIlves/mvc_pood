@@ -16,3 +16,5 @@ class Model:
         helpers.updItem()
     def remAll(self):
         helpers.remAll()
+    def showItem(self, name):
+        return helpers.showItem(name)
