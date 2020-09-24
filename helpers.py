@@ -27,7 +27,7 @@ def showItems():
 def remItem():
     import sys
     global items
-    ask1 = input("Would you like to remove anything? ")
+    ask1 = input("Would you like to remove anything? (yes/no) ")
     if ask1 == "No" or ask1 == "no":
         print("Understandable, have a great day.")
         return
@@ -40,7 +40,7 @@ def remItem():
                 break
             if remove != item:
                 print("Looking...")
-        ask2 = input("Would you like to remove anything else? ")
+        ask2 = input("Would you like to remove anything else? (yes/no) ")
         if ask2 == "no" or ask2 == "No":
             print("Understandable, have a great day.")
             return
@@ -54,7 +54,7 @@ def remItem():
                 if remove != item:
                     print("Looking...")
         while ask2 == "yes" or "Yes":
-            ask2 = input("Would you like to remove anything else? ")
+            ask2 = input("Would you like to remove anything else? (yes/no) ")
             if ask2 == "no" or ask2 == "No":
                 print("Understandable, have a great day.")
                 return
@@ -70,7 +70,7 @@ def remItem():
 
 def updItem():
     global items
-    ask = input("Would you like to update any of the items? ")
+    ask = input("Would you like to update any of the items? (yes/no) ")
     if ask == "No" or ask == "no":
         print("Understandable, have a great day.")
     if ask == "Yes" or ask == "yes":
