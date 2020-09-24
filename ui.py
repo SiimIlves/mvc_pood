@@ -16,5 +16,6 @@ shop.addItem("popcorn", 3.9, 25)
 shop.addItem("vodka", 4.0, 70)
 
 # show item
-shop.remAll()
+shop.showItems()
+shop.remItem()
 shop.showItems()
