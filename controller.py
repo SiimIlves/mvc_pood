@@ -15,11 +15,20 @@ class Controller:
         items = self.model.showItems()
         self.view.showItems(items)
 
-    def remItem(self):
-        items = self.model.remItem()
-
-    def updItem(self):
-        items = self.model.updItem()
+    def remItem(self, name):
+        try:
+            self.model.remItem(name)
+            self.view.remItem(name)
+        except:
+            pass
+        
+    def updItem(self, name, price, amount):
+        try:
+            self.model.updItem(name, price, amount)
+            self.view.updItem(name)
+            self.showItems(name)
+        except:
+            print("")
 
     def remAll(self):
         items = self.model.remAll()
