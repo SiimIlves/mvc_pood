@@ -10,10 +10,10 @@ class Model:
     # show item
     def showItems(self):
         return helpers.showItems()
-    def remItem(self):
-        helpers.remItem()
-    def updItem(self):
-        helpers.updItem()
+    def remItem(self, name):
+        helpers.remItem(name)
+    def updItem(self, name, price, amount):
+        helpers.updItem(name, price, amount)
     def remAll(self):
         helpers.remAll()
     def showItem(self, name):
