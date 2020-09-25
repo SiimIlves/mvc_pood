@@ -27,3 +27,13 @@ class View:
         print("============================")
         print("Shop is not selling {}.".format(name))
         print("============================")
+        
+    def remItem(self, name):
+        print("Removing {}...".format(name))
+        print("Removed {}!".format(name))
+    
+    def remAll(self):
+        print("Removing everything.")
+        
+    def updItem(name):
+        print("Updated {}.".format(name))
