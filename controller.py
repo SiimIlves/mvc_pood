@@ -39,3 +39,7 @@ class Controller:
             self.view.showItem(item)
         except:
             self.view.noItemError(name)
+
+    def stock(self):
+        item = self.model.stock()
+        self.view.stock(item)

@@ -18,3 +18,5 @@ class Model:
         helpers.remAll()
     def showItem(self, name):
         return helpers.showItem(name)
+    def stock(self):
+        return helpers.stock()

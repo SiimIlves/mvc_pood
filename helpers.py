@@ -58,3 +58,20 @@ def showItem(name):
         else:
             continue
             raise exceptions.ItemExists("Couldn't find {}!".format(name))
+
+def stock():
+    global items
+    for item in items:
+        if (item.getName() == bigbuy):
+            kjh == getAmount - IWant
+            if kjh < 0:
+                print("We don't have that many!")
+                pass
+            if kjh >= 0:
+                item.setAmount = kjh
+                return
+        else:
+            continue
+            raise exception.noItemError("We don't sell that here.")
+
+

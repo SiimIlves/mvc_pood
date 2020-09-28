@@ -15,10 +15,8 @@ shop.addItem("wine", 5.60, 5)
 shop.addItem("popcorn", 3.9, 25)
 shop.addItem("car", 12000.0, 3)
 
-# show item
-shop.showItem("milk")
-shop.updItem("bread", 560.0, 99)
-shop.remItem("car")
-shop.showItems()
-shop.remAll()
-shop.showItem("milk")
+# stock market
+bigbuy = input("What would you like to buy? ")
+shop.stock()
+IWant = input("How much of {} would you like? ".format(bigbuy))
+
