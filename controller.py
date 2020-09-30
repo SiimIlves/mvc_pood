@@ -40,6 +40,9 @@ class Controller:
         except:
             self.view.noItemError(name)
 
-    def stock(self):
-        item = self.model.stock()
-        self.view.stock(item)
+    def restock(self, name, price, amount):
+        try:
+            self.model.restock(name, price, amount)
+            print("OK")
+        except:
+            print("No")

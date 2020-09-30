@@ -1,4 +1,5 @@
 import helpers
+import helpers_stock
 
 class Model:
     # get shop data - [] of products
@@ -20,3 +21,6 @@ class Model:
         return helpers.showItem(name)
     def stock(self):
         return helpers.stock()
+    def restock(self, name, price, amount):
+        helpers.addItem(name, price, amount)
+        helpers_stock.stock(name, price, amount)
