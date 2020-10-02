@@ -19,7 +19,7 @@ def addItem(name, price, amount):
 
 
 # show stockItems
-def showItems():
+def showStocks():
     global stockItems
     # control if stockItems exists
     if len(stockItems) == 0:

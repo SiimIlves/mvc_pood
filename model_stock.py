@@ -8,13 +8,13 @@ class ModelStock:
     def addItem(self, name, price, amount):
         helpers_stock.addItem(name, price, amount)
     # show item
-    def showItems(self):
-        return helpers_stock.showItems()
     def remItem(self, name):
         helpers_stock.remItem(name)
     def updItem(self, name, price, amount):
         helpers_stock.updItem(name, price, amount)
     def remAll(self):
         helpers_stock.remAll()
-    def showItem(self, name):
-        return helpers_stock.showItem(name)
+    def showStock(self, name):
+        return helpers_stock.showStock(name)
+    def showStocks(self):
+        return helpers_stock.showStocks()

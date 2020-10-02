@@ -15,6 +15,10 @@ class Controller:
         items = self.model.showItems()
         self.view.showItems(items)
 
+    def showStocks(self):
+        stockItems = self.model.showStocks()
+        self.view.showStocks(stockItems)
+
     def remItem(self, name):
         try:
             self.model.remItem(name)
