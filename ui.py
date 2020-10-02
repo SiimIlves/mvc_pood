@@ -19,9 +19,8 @@ stock.addItem("car", 12000.0, 1)
 
 # already in shop
 shop.addItem("bread", 0.80, 10)
-shop.addItem("milk", 0.50, 30)
 
 # stock market
-shop.restock("car", 12000.0, 1)
+shop.restock("bread", 0.80, 10)
 shop.showItems()
 stock.showStocks()

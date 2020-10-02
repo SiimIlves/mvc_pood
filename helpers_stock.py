@@ -75,4 +75,4 @@ def stock(name, price, amount):
             item.amount = item.setAmount(aamount - amount)
         else:
             continue
-            raise exceptions.ItemExists("Can't add {} to stock.".format(name))
+            raise exceptions.ItemExists("Can't add {} to shop.".format(name))

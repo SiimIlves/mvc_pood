@@ -1,6 +1,9 @@
 import helpers
 import helpers_stock
 
+items = []
+stockItems = []
+
 class Model:
     # get shop data - [] of products
     def __init__(self, items):

@@ -58,3 +58,29 @@ def showItem(name):
         else:
             continue
             raise exceptions.ItemExists("Couldn't find {}!".format(name))
+
+def stack(name, price, takeAmount):
+    global items
+    global stockItems
+    for item in stockItems:
+        if(item.getName() == name):
+            newAmount = (item.getAmount() - takeAmount)
+            item.setAmount(newAmount)
+            continue
+        else:
+            continue
+            raise exceptions.ItemNotExists("Couldn't find {}.".format(name))
+
+    for banana in items:
+        # if the name matches our search
+        if (banana.getName() == name):
+            totalAmount = banana.getAmount() + takeAmount
+            banana.setAmount(totalAmount)
+            break
+        else:
+            product = Product(name, price, takeAmount)
+            if product in items:
+                print("{} already exists!".format(name))
+            else:
+                items.append(product)
+            break
